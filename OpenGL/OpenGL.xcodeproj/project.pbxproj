@@ -15,6 +15,9 @@
 		01C255891F6D79E700F27A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C255871F6D79E700F27A65 /* LaunchScreen.storyboard */; };
 		01C255941F6D79E700F27A65 /* OpenGLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C255931F6D79E700F27A65 /* OpenGLTests.m */; };
 		01C2559F1F6D79E700F27A65 /* OpenGLUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C2559E1F6D79E700F27A65 /* OpenGLUITests.m */; };
+		01C4D6C51F6EC79300170653 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 01C4D6C41F6EC79300170653 /* Shader.vsh */; };
+		01C4D6C61F6EC7D600170653 /* Shader.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 01C4D6C41F6EC79300170653 /* Shader.vsh */; };
+		01C4D6C81F6EC80800170653 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 01C4D6C71F6EC80700170653 /* Shader.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		01C2559A1F6D79E700F27A65 /* OpenGLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C2559E1F6D79E700F27A65 /* OpenGLUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLUITests.m; sourceTree = "<group>"; };
 		01C255A01F6D79E700F27A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01C4D6C41F6EC79300170653 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		01C4D6C71F6EC80700170653 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				01C255781F6D79E700F27A65 /* OpenGL */,
-				01C255921F6D79E700F27A65 /* OpenGLTests */,
 				01C2559D1F6D79E700F27A65 /* OpenGLUITests */,
 				01C255771F6D79E700F27A65 /* Products */,
 			);
@@ -105,6 +109,9 @@
 				01C2557D1F6D79E700F27A65 /* AppDelegate.m */,
 				01C2557F1F6D79E700F27A65 /* ViewController.h */,
 				01C255801F6D79E700F27A65 /* ViewController.m */,
+				01C4D6C71F6EC80700170653 /* Shader.fsh */,
+				01C4D6C41F6EC79300170653 /* Shader.vsh */,
+				01C255921F6D79E700F27A65 /* OpenGLTests */,
 				01C255821F6D79E700F27A65 /* Main.storyboard */,
 				01C255851F6D79E700F27A65 /* Assets.xcassets */,
 				01C255871F6D79E700F27A65 /* LaunchScreen.storyboard */,
@@ -129,7 +136,7 @@
 				01C255951F6D79E700F27A65 /* Info.plist */,
 			);
 			path = OpenGLTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		01C2559D1F6D79E700F27A65 /* OpenGLUITests */ = {
 			isa = PBXGroup;
@@ -249,9 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C4D6C51F6EC79300170653 /* Shader.vsh in Resources */,
 				01C255891F6D79E700F27A65 /* LaunchScreen.storyboard in Resources */,
 				01C255861F6D79E700F27A65 /* Assets.xcassets in Resources */,
 				01C255841F6D79E700F27A65 /* Main.storyboard in Resources */,
+				01C4D6C81F6EC80800170653 /* Shader.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C4D6C61F6EC7D600170653 /* Shader.vsh in Sources */,
 				01C255811F6D79E700F27A65 /* ViewController.m in Sources */,
 				01C2557E1F6D79E700F27A65 /* AppDelegate.m in Sources */,
 				01C2557B1F6D79E700F27A65 /* main.m in Sources */,
@@ -516,6 +526,7 @@
 				01C255A51F6D79E700F27A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01C255A61F6D79E700F27A65 /* Build configuration list for PBXNativeTarget "OpenGLTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +535,7 @@
 				01C255A81F6D79E700F27A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01C255A91F6D79E700F27A65 /* Build configuration list for PBXNativeTarget "OpenGLUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +544,7 @@
 				01C255AB1F6D79E700F27A65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
