@@ -15,6 +15,10 @@
 		012B48C61F740961007B3437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012B48C41F740961007B3437 /* LaunchScreen.storyboard */; };
 		012B48D11F740961007B3437 /* OpenGL_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B48D01F740961007B3437 /* OpenGL_____Tests.m */; };
 		012B48DC1F740961007B3437 /* OpenGL_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B48DB1F740961007B3437 /* OpenGL_____UITests.m */; };
+		012B48EB1F7409EA007B3437 /* beetle.png in Resources */ = {isa = PBXBuildFile; fileRef = 012B48E91F7409EA007B3437 /* beetle.png */; };
+		012B48EC1F7409EA007B3437 /* leaves.gif in Resources */ = {isa = PBXBuildFile; fileRef = 012B48EA1F7409EA007B3437 /* leaves.gif */; };
+		012B48F31F740A95007B3437 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 012B48F11F740A95007B3437 /* Shader.fsh */; };
+		012B48F41F740A95007B3437 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 012B48F21F740A95007B3437 /* Shader.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		012B48D71F740961007B3437 /* OpenGL（摄像机）UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGL（摄像机）UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		012B48DB1F740961007B3437 /* OpenGL_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OpenGL_____UITests.m"; sourceTree = "<group>"; };
 		012B48DD1F740961007B3437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012B48E91F7409EA007B3437 /* beetle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beetle.png; sourceTree = "<group>"; };
+		012B48EA1F7409EA007B3437 /* leaves.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = leaves.gif; sourceTree = "<group>"; };
+		012B48F11F740A95007B3437 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		012B48F21F740A95007B3437 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				012B48BA1F740961007B3437 /* AppDelegate.m */,
 				012B48BC1F740961007B3437 /* ViewController.h */,
 				012B48BD1F740961007B3437 /* ViewController.m */,
+				012B48E91F7409EA007B3437 /* beetle.png */,
+				012B48EA1F7409EA007B3437 /* leaves.gif */,
+				012B48F11F740A95007B3437 /* Shader.fsh */,
+				012B48F21F740A95007B3437 /* Shader.vsh */,
 				012B48BF1F740961007B3437 /* Main.storyboard */,
 				012B48C21F740961007B3437 /* Assets.xcassets */,
 				012B48C41F740961007B3437 /* LaunchScreen.storyboard */,
@@ -249,8 +261,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				012B48F31F740A95007B3437 /* Shader.fsh in Resources */,
+				012B48F41F740A95007B3437 /* Shader.vsh in Resources */,
 				012B48C61F740961007B3437 /* LaunchScreen.storyboard in Resources */,
+				012B48EC1F7409EA007B3437 /* leaves.gif in Resources */,
 				012B48C31F740961007B3437 /* Assets.xcassets in Resources */,
+				012B48EB1F7409EA007B3437 /* beetle.png in Resources */,
 				012B48C11F740961007B3437 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
